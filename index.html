@@ -6,12 +6,12 @@
     <title>Crafty Creations Hub</title>
     <link rel="stylesheet" type="text/css" href="app.css">
 </head>
-
 <body>
     <header>
         <div class="container">
             <h1>Crafty Creations Hub</h1>
             <nav>
+                <span style="font-size:30px;cursor:pointer; display:none;" class="openNav" onclick="openNav()">&#9776; open</span>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -21,7 +21,6 @@
             </nav>
         </div>
     </header>
-
     <section id="main-content">
         <div class="container">
             <h2>Welcome to Crafty Creations Hub</h2>
@@ -36,6 +35,17 @@
             <p>&copy; 2024 Crafty Creations Hub. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+            document.getElementById("openNav").style.display = "none";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+            document.getElementById("openNav").style.display = "block";
+        }
+    </script>
 </body>
-<script src="app.js"></script>
 </html>
